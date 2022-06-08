@@ -1,0 +1,123 @@
+{
+    "组织管理": {
+        "添加组织": {
+            "AddOrgSuccess": {"message": "添加组织成功！"},
+            "AddOrgFailExistCode": {"message": "添加组织失败，组织编码[zyorg]已存在！"},
+            "AddOrgFailExistName": {"state": false},
+            "AddOrgFailEmptyCode": {"state": false},
+            "AddOrgFailEmptyName": {"state": false}
+        },
+        "修改组织":{
+            "ModifyOrgSuccess": {"state": true},
+            "ModifyOrgFailExistCode": {"state": false},
+            "ModifyOrgFailExistName": {"state": false},
+            "ModifyOrgFailEmptyName": {"state": false},
+            "ModifyOrgFailEmptyCode": {"state": false}
+        },
+        "根据组织编码删除组织":{
+            "DeleteOrgSuccess": {"state": true},
+            "DeleteOrgFailNoExistCode": {"state": false},
+            "DeleteOrgFailEmptyCode": {"state": false},
+            "DeleteOrgFailLongCode": {"state": false},
+            "DeleteOrgFailCodeSPChar": {"state": false}
+
+        },
+        "组织加入用户":{
+            "AddUserSuccess": {"state": true},
+            "AddUserFailNoExistCode": {"state": false},
+            "AddUserFailNoExistUser": {"state": false},
+            "AddUserFailEmptyCode": {"state": false},
+            "AddUserFailEmptyUser": {"state": false}
+
+        },
+        "设置负责人":{
+            "SetSuccess": {"state": true},
+            "SetFailNoCode": {"state": false},
+            "SetFailNoUser": {"state": false},
+            "SetFailEmptyUser": {"state": false},
+            "SetFailEmptyCode": {"state": false}
+
+        },
+        "取消负责人":{
+            "CancelSuccess": {"state": true},
+            "CancelFailNoCode": {"state": false},
+            "CancelFailNoUser": {"state": false},
+            "CancelFailEmptyUser": {"state": false},
+            "CancelFailEmptyCode": {"state": false}
+
+        },
+        "用户取消加入组织（sql查询）":{
+            "CancelAddSuccess": {"state": true},
+            "CancelAddFailNoUser": {"state": false},
+            "CancelAddFailNoCode": {"state": false},
+            "CancelAddFailEmptyCode": {"state": false},
+            "CancelAddFailEmptyUser": {"state": false}
+
+        },
+        "组织添加岗位":{
+            "AddJobSuccess": {"state": true},
+            "AddJobFailNoCode": {"state": false},
+            "AddJobFailExistJobCode": {"state": false},
+            "AddJobFailExistJobName": {"state": false},
+            "AddJobFailEmptyJobCode": {"state": false}
+
+        },
+        "更新岗位":{
+            "UpdateSuccess": {"state": true},
+            "UpdateFailNoOrgCode": {"state": false},
+            "UpdateFailNoJobCode": {"state": false},
+            "UpdateFailExistJobName": {"state": false},
+            "UpdateFailEmptyOrgCode": {"state": false}
+
+        },
+        "删除组织岗位":{
+            "DeleteJobSuccess": {"state": true},
+            "DeleteJobFailNoJob": {"state": false},
+            "DeleteJobFailEmptyJobCode": {"state": false},
+            "DeleteJobFailLongJobCode": {"state": false},
+            "DeleteJobFailJobCodeSPChar": {"state": false}
+
+        },
+        "用户加入到岗位":{
+            "AddUserToJobSuccess": {"state": true},
+            "AddUserToJobFailNoJobCode": {"state": false},
+            "AddUserToJobFailNoUser": {"state": false},
+            "AddUserToJobFailEmptyJobCode": {"state": false},
+            "AddUserToJobFailEmptyUser": {"state": false}
+
+        },
+        "设置组织责任岗位":{
+            "SetJobSuccess": {"state": true},
+            "SetJobFailNoJobCode": {"state": false},
+            "SetJobFailEmptyJobCode": {"state": false}
+        },
+        "取消组织责任岗位":{
+            "CancelJobSuccess": {"state": true},
+            "CancelJobFailNoJobCode": {"state": false},
+            "CancelJobFailEmptyJobCode": {"state": false}
+
+        },
+        "保存组织参数":{
+            "SaveParameterSuccess": {"state": true},
+            "SaveParameterFailNoOrgCode": {"state": false},
+            "SaveParameterFailNoParameter": {"state": false},
+            "SaveParameterFailEmptyOrgCode": {"state": false},
+            "SaveParameterFailEmptyParameter": {"state": false}
+
+        },
+        "添加分级管理":{
+            "AddMgtSuccess": {"state": true},
+            "AddMgtFailNoOrgCode": {"state": false},
+            "AddMgtFailNoUser": {"state": false},
+            "AddMgtFailUserNotInOrg": {"state": false}
+
+        },
+        "删除分级管理":{
+            "DeleteMgtSuccess": {"state": true},
+            "DeleteMgtFailUserNotMgt": {"state": false},
+            "DeleteMgtFailEmptyOrgCode": {"state": false},
+            "DeleteMgtFailEmptyUser": {"state": false}
+
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "组织管理": {
+        "添加组织": {
+            "AddOrgSuccess": ["DELETE FROM uc_org WHERE CODE_=\"zyorg\";", "SELECT ID_ FROM uc_demension WHERE IS_DELE_=\"0\" AND CODE_=\"zytest\";"],
+            "AddOrgFailExistCode": ["SELECT ID_ FROM uc_demension WHERE IS_DELE_=\"0\" AND CODE_=\"zytest\";"],
+            "AddOrgFailExistName": ["SELECT ID_ FROM uc_demension WHERE IS_DELE_=\"0\" AND CODE_=\"zytest\";"],
+            "AddOrgFailEmptyCode": ["SELECT ID_ FROM uc_demension WHERE IS_DELE_=\"0\" AND CODE_=\"zytest\";"],
+            "AddOrgFailEmptyName": ["SELECT ID_ FROM uc_demension WHERE IS_DELE_=\"0\" AND CODE_=\"zytest\";"]
+        },
+        "修改组织": {
+            "ModifyOrgSuccess": ["SELECT ID_ FROM uc_demension WHERE IS_DELE_=\"0\" AND CODE_=\"zytest\";"],
+            "ModifyOrgFailExistCode": ["SELECT ID_ FROM uc_demension WHERE IS_DELE_=\"0\" AND CODE_=\"zytest\";"],
+            "ModifyOrgFailExistName": ["SELECT ID_ FROM uc_demension WHERE IS_DELE_=\"0\" AND CODE_=\"zytest\";"],
+            "ModifyOrgFailEmptyName": ["SELECT ID_ FROM uc_demension WHERE IS_DELE_=\"0\" AND CODE_=\"zytest\";"],
+            "ModifyOrgFailEmptyCode": ["SELECT ID_ FROM uc_demension WHERE IS_DELE_=\"0\" AND CODE_=\"zytest\";"]
+        },
+        "组织加入用户":{
+            "AddUserSuccess":["UPDATE uc_org SET IS_DELE_=\"0\" WHERE CODE_=\"zyorg\";"]},
+        "用户取消加入组织（sql查询）":{
+            "CancelAddSuccess": ["SELECT ou.ID_ FROM uc_org_user ou INNER JOIN uc_org org ON ou.ORG_ID_ = org.ID_ INNER JOIN uc_user us ON us.ID_ = ou.USER_ID_ AND us.ACCOUNT_=\"zy\" AND org.CODE_ =\"zyorg\" AND ou.IS_DELE_=0;"]
+            },
+        "组织添加岗位": {
+            "AddJobSuccess": ["DELETE FROM uc_org_post WHERE CODE_=\"zyjob\";"]
+            },
+        "用户加入到岗位":{
+            "AddUserToJobSuccess": ["UPDATE uc_org_post SET IS_DELE_=0 WHERE CODE_=\"zyjob\";"]
+            },
+        "添加分级管理":{
+            "AddMgtSuccess": ["DELETE auth FROM uc_org_auth auth INNER JOIN uc_user us ON auth.USER_ID_ = us.ID_ INNER JOIN uc_org org ON auth.ORG_ID_ = org.ID_ INNER JOIN  uc_demension dem ON auth.DEM_ID_ = dem.ID_ AND us.ACCOUNT_ =\"zy\" AND org.CODE_ =\"zyorg\" AND dem.CODE_ =\"zytest\";"]
+            },
+        "删除分级管理":{
+            "DeleteMgtSuccess": ["SELECT auth.ID_ FROM uc_org_auth auth INNER JOIN uc_user us ON auth.USER_ID_ = us.ID_ INNER JOIN uc_org org ON auth.ORG_ID_ = org.ID_ INNER JOIN  uc_demension dem ON auth.DEM_ID_ = dem.ID_ AND us.ACCOUNT_ =\"zy\" AND org.CODE_ =\"zyorg\" AND dem.CODE_ =\"zytest\";"]
+            }
+
+
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "认证接口": {
+    "登录系统": {
+      "LoginSuccess": {
+        "username":"超级管理员"
+      },
+      "LoginFailPWDSuperLength": {
+        "message":"账号或密码错误"
+      },
+      "LoginFailPWDLengthOne": {
+        "message":"账号或密码错误"
+      },
+      "LoginFailErrorPWD": {
+        "message":"账号或密码错误"
+      },
+      "LoginFailNonePWD": {
+        "message":"账号或密码错误"
+      },
+      "LoginFailPWDSPChar": {
+        "message":"账号或密码错误"
+      }
+        },
+     "退出登录": {
+            "SingoutSuccess": {"message": "退出成功"}
+
+  }
+
+},
+  "维度管理": {
+    "添加维度": {
+      "AddDemSuccess": {
+        "message":"添加维度成功！"
+      }
+    }
+  }
+}

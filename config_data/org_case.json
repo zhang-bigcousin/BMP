@@ -1,0 +1,373 @@
+{
+    "组织管理": {
+        "添加组织": {
+            "AddOrgSuccess": {
+                "code": "zyorg",
+	            "demId": "12",
+	            "exceedLimitNum": 0,
+                "grade": "",
+	            "limitNum": 0,
+	            "name": "zyorg",
+	            "nowNum": 0,
+	            "orderNo": 0,
+	            "parentId": "0"},
+            "AddOrgFailExistCode": {
+                "code": "zyorg",
+	            "demId": "12",
+	            "exceedLimitNum": 0,
+                "grade": "",
+	            "limitNum": 0,
+	            "name": "zyorg",
+	            "nowNum": 0,
+	            "orderNo": 0,
+	            "parentId": "0"},
+            "AddOrgFailExistName": {
+                "code": "zyorg2",
+	            "demId": "12",
+	            "exceedLimitNum": 0,
+                "grade": "",
+	            "limitNum": 0,
+	            "name": "zyorg",
+	            "nowNum": 0,
+	            "orderNo": 0,
+	            "parentId": "0"},
+            "AddOrgFailEmptyCode": {
+                "code": "",
+	            "demId": "12",
+	            "exceedLimitNum": 0,
+                "grade": "",
+	            "limitNum": 0,
+	            "name": "zyorg",
+	            "nowNum": 0,
+	            "orderNo": 0,
+	            "parentId": "0"},
+            "AddOrgFailEmptyName": {
+                "code": "zyorg12",
+	            "demId": "12",
+	            "exceedLimitNum": 0,
+                "grade": "",
+	            "limitNum": 0,
+	            "name": "",
+	            "nowNum": 0,
+	            "orderNo": 0,
+	            "parentId": "0"}
+        },
+        "修改组织":{
+            "ModifyOrgSuccess": {
+	            "code": "zyorg",
+	            "demId": "12",
+	            "exceedLimitNum": 0,
+                "grade": "",
+	            "limitNum": 0,
+	            "name": "zyorg-修改",
+	            "nowNum": 0,
+	            "orderNo": 0,
+	            "parentId": "0"},
+            "ModifyOrgFailExistCode": {
+	            "code": "zyorg",
+	            "demId": "12",
+	            "exceedLimitNum": 0,
+                "grade": "",
+	            "limitNum": 0,
+	            "name": "zyorg-修改",
+	            "nowNum": 0,
+	            "orderNo": 0,
+	            "parentId": "0"},
+            "ModifyOrgFailExistName": {
+	            "code": "zyorg",
+	            "demId": "12",
+	            "exceedLimitNum": 0,
+                "grade": "",
+	            "limitNum": 0,
+	            "name": "zyorg-修改",
+	            "nowNum": 0,
+	            "orderNo": 0,
+	            "parentId": "0"},
+            "ModifyOrgFailEmptyName": {
+	            "code": "zyorg",
+	            "demId": "12",
+	            "exceedLimitNum": 0,
+                "grade": "",
+	            "limitNum": 0,
+	            "name": "",
+	            "nowNum": 0,
+	            "orderNo": 0,
+	            "parentId": "0"},
+            "ModifyOrgFailEmptyCode": {
+	            "code": "",
+	            "demId": "12",
+	            "exceedLimitNum": 0,
+                "grade": "",
+	            "limitNum": 0,
+	            "name": "zyorg-修改",
+	            "nowNum": 0,
+	            "orderNo": 0,
+	            "parentId": "0"
+            }
+        },
+        "根据组织编码删除组织":{
+            "DeleteOrgSuccess": "zyorg",
+            "DeleteOrgFailNoExistCode": "zyorg",
+            "DeleteOrgFailEmptyCode": "",
+            "DeleteOrgFailLongCode": "zyorg1111111111111111111",
+            "DeleteOrgFailCodeSPChar": "!@#@$#%^^%&%^*&"
+
+        },
+        "组织加入用户":{
+            "AddUserSuccess": {
+              "orgCode": "zyorg",
+              "accounts": "zy"},
+            "AddUserFailNoExistCode": {
+              "orgCode": "zyorg121",
+              "accounts": "zy"},
+            "AddUserFailNoExistUser": {
+              "orgCode": "zyorg",
+              "accounts": "zy121"},
+            "AddUserFailEmptyCode": {
+              "orgCode": "",
+              "accounts": "zy"},
+            "AddUserFailEmptyUser": {
+              "orgCode": "zyorg",
+              "accounts": ""}
+
+        },
+        "设置负责人":{
+            "SetSuccess": {
+              "orgCode": "zyorg",
+              "accounts": "zy",
+              "isCharge": "true"},
+            "SetFailNoCode": {
+              "orgCode": "zyorg121",
+              "accounts": "zy",
+              "isCharge": "true"},
+            "SetFailNoUser": {
+              "orgCode": "zyorg",
+              "accounts": "zy121",
+              "isCharge": "true"},
+            "SetFailEmptyUser": {
+              "orgCode": "zyorg",
+              "accounts": "",
+              "isCharge": "true"},
+            "SetFailEmptyCode": {
+              "orgCode": "",
+              "accounts": "zy",
+              "isCharge": "true"}
+
+        },
+        "取消负责人":{
+            "CancelSuccess": {
+              "orgCode": "zyorg",
+              "accounts": "zy",
+              "isCharge": "false"},
+            "CancelFailNoCode": {
+              "orgCode": "zyorg121",
+              "accounts": "zy",
+              "isCharge": "false"},
+            "CancelFailNoUser": {
+              "orgCode": "zyorg",
+              "accounts": "zy121",
+              "isCharge": "false"},
+            "CancelFailEmptyUser": {
+              "orgCode": "zyorg",
+              "accounts": "",
+              "isCharge": "false"},
+            "CancelFailEmptyCode": {
+              "orgCode": "",
+              "accounts": "zy",
+              "isCharge": "false"}
+
+        },
+        "用户取消加入组织（sql查询）":{
+            "CancelAddSuccess": {"ids": "12"},
+            "CancelAddFailNoUser": {"ids": "212121"},
+            "CancelAddFailNoCode": {"ids": "!$$%@%"},
+            "CancelAddFailEmptyCode": {"ids": ""},
+            "CancelAddFailEmptyUser": {"ids": "1"}
+
+        },
+        "组织添加岗位":{
+            "AddJobSuccess": {
+              "code": "zyjob",
+              "isCharge": 0,
+	          "jobCode": "zyzw",
+	          "name": "zyjob",
+	          "orgCode": "zyorg"},
+            "AddJobFailNoCode": {
+              "code": "zyjob",
+              "isCharge": 0,
+	          "jobCode": "zyzw1",
+	          "name": "zyjob1",
+	          "orgCode": "zyorg"},
+            "AddJobFailExistJobCode": {
+              "code": "zyjob12",
+              "isCharge": 0,
+	          "jobCode": "zyzw",
+	          "name": "zyjob12",
+	          "orgCode": "zyorg"},
+            "AddJobFailExistJobName": {
+              "code": "zyjob11",
+              "isCharge": 0,
+	          "jobCode": "zyzw",
+	          "name": "zyjob",
+	          "orgCode": "zyorg"},
+            "AddJobFailEmptyJobCode": {
+              "code": "",
+              "isCharge": 0,
+	          "jobCode": "zyzw",
+	          "name": "zyjob",
+	          "orgCode": "zyorg"}
+
+        },
+        "更新岗位":{
+            "UpdateSuccess": {
+              "code": "zyjob",
+              "isCharge": 0,
+	          "jobCode": "zyzw",
+	          "name": "zyjob-修改",
+	          "orgCode": "zyorg"},
+            "UpdateFailNoOrgCode": {
+              "code": "zyjob121",
+              "isCharge": 0,
+	          "jobCode": "zyzw",
+	          "name": "zyjob",
+	          "orgCode": "zyorg"},
+            "UpdateFailNoJobCode": {
+              "code": "zyjob",
+              "isCharge": 0,
+	          "jobCode": "zyzw121",
+	          "name": "zyjob",
+	          "orgCode": "zyorg"},
+            "UpdateFailExistJobName": {
+              "code": "zyjob",
+              "isCharge": 0,
+	          "jobCode": "zyzw",
+	          "name": "zyjob-修改",
+	          "orgCode": "zyorg"},
+            "UpdateFailEmptyOrgCode": {
+              "code": "zyjob",
+              "isCharge": 0,
+	          "jobCode": "zyzw",
+	          "name": "zyjob",
+	          "orgCode": ""}
+
+        },
+        "删除组织岗位":{
+            "DeleteJobSuccess": {"postCodes": "zyjob"},
+            "DeleteJobFailNoJob": {"postCodes": "zyjob1211"},
+            "DeleteJobFailEmptyJobCode": {"postCodes": ""},
+            "DeleteJobFailLongJobCode": {"postCodes": "zyjob111111111111111111111"},
+            "DeleteJobFailJobCodeSPChar": {"postCodes": "!@#$%^^&*&^"}
+
+        },
+        "用户加入到岗位":{
+            "AddUserToJobSuccess": {"postCode": "zyjob","accounts": "zy"},
+            "AddUserToJobFailNoJobCode": {"postCode": "zyjob1211","accounts": "zy"},
+            "AddUserToJobFailNoUser": {"postCode": "zyjob","accounts": "zy121"},
+            "AddUserToJobFailEmptyJobCode": {"postCode": "","accounts": "zy"},
+            "AddUserToJobFailEmptyUser": {"postCode": "zyjob","accounts": ""}
+
+        },
+        "设置组织责任岗位":{
+            "SetJobSuccess": {"postCode": "zyjob","isMain": "true"},
+            "SetJobFailNoJobCode": {"postCode": "zyjob121","isMain": "true"},
+            "SetJobFailEmptyJobCode": {"postCode": "","isMain": "true"}
+        },
+        "取消组织责任岗位":{
+            "CancelJobSuccess": {"postCode": "zyjob","isMain": "false"},
+            "CancelJobFailNoJobCode": {"postCode": "zyjob121","isMain": "false"},
+            "CancelJobFailEmptyJobCode": {"postCode": "","isMain": "false"}
+
+        },
+        "保存组织参数":{
+            "SaveParameterSuccess": {
+              "body": [{
+                    "alias":"3",
+	                "value":"3"}],
+              "query":{
+                "orgCode":"zyorg"}},
+            "SaveParameterFailNoOrgCode": {
+              "body": [{
+                    "alias":"3",
+	                "value":"3"}],
+              "query":{
+                "orgCode":""}},
+            "SaveParameterFailNoParameter": {
+              "body": [{
+                    "alias":"3",
+	                "value":"3"}],
+              "query":{
+                "orgCode":""}},
+            "SaveParameterFailEmptyOrgCode": {
+              "body": [{
+                    "alias":"3",
+	                "value":"3"}],
+              "query":{
+                "orgCode":""}},
+            "SaveParameterFailEmptyParameter": {
+              "body": [{
+                    "alias":"3",
+	                "value":"3"}],
+              "query":{
+                "orgCode":""}}
+        },
+        "添加分级管理":{
+            "AddMgtSuccess": {
+            	"account": "zy",
+            	"demCode": "zytest",
+            	"id": "12",
+            	"layoutPerms": "add,delete,edit",
+            	"newAccount": "",
+            	"orgCode": "zyorg",
+            	"orgPerms": "add,delete,edit",
+            	"orgauthPerms": "add,delete,edit",
+            	"posPerms": "add,delete,edit",
+            	"userPerms": "add,delete,edit"},
+            "AddMgtFailNoOrgCode": {
+            	"account": "zy",
+            	"demCode": "zytest",
+            	"id": "12",
+            	"layoutPerms": "add,delete,edit",
+            	"newAccount": "",
+            	"orgCode": "zyorg1211",
+            	"orgPerms": "add,delete,edit",
+            	"orgauthPerms": "add,delete,edit",
+            	"posPerms": "add,delete,edit",
+            	"userPerms": "add,delete,edit"},
+            "AddMgtFailNoUser": {
+            	"account": "zy121",
+            	"demCode": "zytest",
+            	"id": "12",
+            	"layoutPerms": "add,delete,edit",
+            	"newAccount": "",
+            	"orgCode": "zyorg",
+            	"orgPerms": "add,delete,edit",
+            	"orgauthPerms": "add,delete,edit",
+            	"posPerms": "add,delete,edit",
+            	"userPerms": "add,delete,edit"},
+            "AddMgtFailUserNotInOrg": {
+            	"account": "zy1",
+            	"demCode": "zytest",
+            	"id": "12",
+            	"layoutPerms": "add,delete,edit",
+            	"newAccount": "",
+            	"orgCode": "zyorg",
+            	"orgPerms": "add,delete,edit",
+            	"orgauthPerms": "add,delete,edit",
+            	"posPerms": "add,delete,edit",
+            	"userPerms": "add,delete,edit"}
+
+        },
+        "删除分级管理":{
+            "DeleteMgtSuccess": {
+              "id": "12"
+            },
+            "DeleteMgtFailUserNotMgt": {
+              "id": "1221212121"},
+            "DeleteMgtFailEmptyOrgCode": {
+              "id": ""},
+            "DeleteMgtFailEmptyUser": {
+              "id": "#$%#@%$^$^%$"}
+
+        }
+    }
+}

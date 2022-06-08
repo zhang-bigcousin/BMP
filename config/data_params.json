@@ -1,0 +1,41 @@
+{
+  "认证接口": {
+    "登录系统": {
+      "LoginSuccess": {
+        "username": "admin",
+        "password": "MTIzNDU2"
+      },
+      "LoginFailPWDSuperLength": {
+        "username": "admin",
+        "password": "111111111111111111111111111111111111111111111111111111111111111111"
+      },
+      "LoginFailPWDLengthOne": {
+        "username": "admin",
+        "password": "a"
+      },
+      "LoginFailErrorPWD": {
+        "username": "admin",
+        "password": "abcdergd"
+      },
+      "LoginFailNonePWD": {
+        "username": "admin",
+        "password": ""
+      },
+      "LoginFailPWDSPChar": {
+        "username": "admin",
+        "password": "㊬㊭㊮㊯㊰㊙㉿囍♔"
+      }
+    }
+
+  },
+  "维度管理": {
+    "添加维度": {
+      "AddDemSuccess": {
+        "code": "test43gsdgffsd",
+        "description": "test43gsdgffsd",
+        "isDefault": 0,
+        "name": "test43gsdgffsd"
+      }
+    }
+  }
+}
