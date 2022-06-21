@@ -21,6 +21,7 @@ class ConnectDb:
         database = read_ini.ReadIni().get_after_path('mysql', 'database')
         username = read_ini.ReadIni().get_after_path('mysql', 'user')
         password = read_ini.ReadIni().get_after_path('mysql', 'password')
+        # 创建链接对象
         self.db = pymysql.Connection(
             host=ip,
             port=int(port),
@@ -28,6 +29,7 @@ class ConnectDb:
             user=username,
             passwd=password
         )
+        # 获取游标对象(游标对象不能提交,一般用于执行sql语句)
         self.cursor = self.db.cursor()
 
     # 执行删除语句
